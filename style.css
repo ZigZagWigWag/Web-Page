@@ -8,8 +8,10 @@
 body{
     background-image: url(img/bg.png);
     background-repeat: no-repeat;
-    background-size: 100rem;
+    background-size: cover;
     background-attachment: fixed;
+    min-height: 100vh
+
 }
 /* navigation */
 
@@ -21,7 +23,7 @@ body{
     justify-content: space-between;
     padding: 0 2px;
     position: fixed;
-    z-index: 100;
+    z-index: 2;
     width: 100%;
     border-bottom: solid 0.5px black;
 }
@@ -30,7 +32,7 @@ body{
     padding-left: 50px;
     margin-top: 15px;
     height: 40px;
-    text-decoration: none;
+    text-decoration: none; position: relative;
 }
 
 .logo span{
@@ -51,9 +53,10 @@ body{
     display: flex;
     list-style: none;
     text-transform: capitalize;
+    padding-right: 70%;
+    margin-top: 25px;
+    height: 40px;  
     position: relative;
-    right: 57rem;
-    margin-top: 10px;
 }
 
 .menu li{
@@ -84,6 +87,31 @@ body{
 }
 
 
+.text h3{
+    font-weight: 400;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    background: linear-gradient(109.2deg, rgb(107, 52, 255) 16.5%, rgb(51, 159, 247) 81%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 40px;
+}
+
+/* text */
+
+.text{
+    padding: 70px;
+    margin: 0;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    top: 85px;
+    align-items: center;
+    
+}
+
+
 .text h1{
     font-weight: 400;
     color: white;
@@ -92,7 +120,7 @@ body{
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-    font-size: 76px;
+    font-size: 5vw;
 }
 
 
@@ -102,7 +130,7 @@ body{
     margin: 0;
     position: absolute;
     top: 60%;
-    left: 45%;
+    left: 40%;
 
 }
 
@@ -115,6 +143,8 @@ body{
   color: #fff;
   background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
   cursor: pointer;
+  width: 45vh;
+  height:3.5vw;
 }
 
 .button button:hover{
@@ -128,9 +158,9 @@ body{
 .button h4{
     font-weight: lighter;
     text-align: center;
-    font-size: small;
+    font-size: medium;
     margin-top: 10px;
-    font-family: ro;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgb(60, 60, 255);
 }
 
@@ -148,5 +178,7 @@ body{
     line-height: 4;
     font-size: 0.8rem;
     position: absolute;
+    z-index: 3;
 }
+
 

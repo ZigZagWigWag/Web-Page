@@ -35,7 +35,7 @@
     <!--Button-->
 
     <div class="button" role="button">
-        <a href="form/form.html"><button>Lapor</button></a>
+        <a href="form.php"><button>Lapor</button></a>
         <a href=""><h4>login as admin</h4></a>
     </div>
 
