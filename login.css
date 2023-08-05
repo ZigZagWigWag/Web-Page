@@ -10,7 +10,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    min-height: 100vh;
+    min-height: 100vh
+
 }
 
 .container{
@@ -77,40 +78,70 @@ body{
 .menu li a:hover{
     color: lightseagreen
 }
-/* login */
 
-.login{
-    padding-top: 50px;
+/* text */
+
+.text{
+    padding: 70px;
+    margin: 0;
+    text-align: center;
+    height: 100%;
     position: relative;
-    text-align: center;
-    border: 1px solid;
-    background-color: white;
-    height: 250px;
-    width: 300px;
-    border-radius: 20px;
-    margin:auto;
-}
-.login h3{
-    text-align: center;
+    top: 70px;
+    align-items: center;
+    
 }
 
-.login button{
-    width: 20%;
-    height: 10%;
-    border-radius:10px;
-    background-color: #2196F3;
+
+.text h3{
+    font-weight: 400;
     color: white;
-    border: none;
+    font-family: 'Bebas Neue', sans-serif;
+    background: linear-gradient(109.2deg, rgb(107, 52, 255) 16.5%, rgb(51, 159, 247) 81%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 40px;
 }
 
-.login label {
-    margin-right: 170px;
-    font-size: medium;
+
+/* form */
+
+.form{
+    position: relative;
+    z-index: 1;
+    margin: auto 0;
+    left: 50%;
+    width: 25%;
+    transform: translateX(-50%);
+    padding: 50px;
+    border-radius: 20px;
+    background-image: url(img/pattern.jpg);
+    text-align: center;
 }
 
+/* login */
 .login input{
-    width: 80%;
+    width: 90%;
 }
+.login label{
+    font-size: larger;
+    margin-left: -150px;
+}
+.login button{
+    padding: 6px 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+    cursor: pointer
+}
+
+.login button:hover{
+    opacity: 0.9;
+}
+
 /* footer */
 
 .footer{
@@ -126,3 +157,4 @@ body{
     z-index: 3;
     max-width: 1440px;
 }
+
