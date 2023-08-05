@@ -87,7 +87,7 @@ body{
     text-align: center;
     height: 100%;
     position: relative;
-    top: 70px;
+    top: 40px;
     align-items: center;
     
 }
@@ -110,7 +110,6 @@ body{
 .contacts{
     height: 200px;
     margin: auto 0;
-    margin-top: 10px;
     text-align: center;
 }
 
@@ -136,6 +135,43 @@ h1{
     background-clip: text;
     -webkit-background-clip: text;
 }
+
+button{
+        flex-direction: column;
+        align-items: center;
+        padding: 6px 14px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+        border-radius: 6px;
+        border: none;
+      
+        color: #fff;
+        background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+         background-origin: border-box;
+        box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+        user-select: none;
+        -webkit-user-select: none; 
+}
+
+button:hover{
+    opacity: 0.9;
+}
+
+#more1,#more2{
+    display: none;
+    margin-top: 10px;
+    background-image: url(img/pattern.jpg);
+    border-radius: 10px;
+    height: 50px;
+    padding: 5px;
+}
+
+#Btn1,#Btn2{
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+
+
 
 /* footer */
 

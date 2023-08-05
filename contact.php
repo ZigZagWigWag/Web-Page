@@ -38,14 +38,21 @@
     <div class="ketua">
         <img src="img/ketua.jpeg" alt="">
         <h1>Ketua Asrama</h1>
-        <button onclick="myFunction1()" id="myBtn">Read more</button>
-        <span id="more1">asasas</span>
+        <button onclick="myFunction1()" id="Btn1">Read more</button>
+        <span id="more1">
+            Jayamin <br>
+            0 13-789 8277
+        </span>
     </div>
+
     <div class="penyelia">
         <img src="img/penyelia.jpg" alt="">
         <h1>Penyelia Asrama</h1>
-        <button onclick="myFunction2()" id="myBtn">Read more</button>
-        <span id="more2">asasas</span>
+        <button onclick="myFunction2()" id="Btn2">Read more</button>
+        <span id="more2">
+            John Doe <br>
+            0 12-345 6789
+        </span>
     </div>  
   </div>
     <!--footer-->
@@ -57,22 +64,35 @@
     </div>
     <script>
         function myFunction1() {
-    var x = document.getElementById("more1");
-    if (x.style.display === "none") {
-      x.style.display = "block";
+    var more1 = document.getElementById("more1");
+    var btnText1 = document.getElementById("Btn1");
+    if (more1.style.display === "block") {
+      btnText1.innerHTML = "Read more";
+      more1.style.display = "none";
     } else {
-      x.style.display = "none";
+      btnText1.innerHTML = "Read less";
+      more1.style.display="block";
     }
   }
 
   function myFunction2() {
-    var x = document.getElementById("more2");
-    if (x.style.display === "none") {
-      x.style.display = "block";
+    var more2 = document.getElementById("more2");
+    var btnText2 = document.getElementById("Btn2");
+    if (more2.style.display === "block") {
+      btnText2.innerHTML = "Read more";
+      more2.style.display = "none";
     } else {
-      x.style.display = "none";
+      btnText2.innerHTML = "Read less";
+      more2.style.display="block";
     }
   }
+
+
+ 
     </script>
 </body>
 </html> 
+
+
+<!-- HTML !-->
+
