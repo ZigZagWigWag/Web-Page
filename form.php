@@ -11,18 +11,20 @@
 </head>
 <body>
 
+    <div class="container">
+
     <!--navbar-->
 
     <div class="navbar">
         <div class="navlogo">
             <div class="logo">
-                <a href=""><img src="img/logokv.png" alt=""></a>
+                <a href="index.php"><img src="img/logokv.png" alt=""></a>
             </div>
         </div>
         <ul class="menu">
-            <li><a href="">Home</a></li>
-            <li><a href="">Contacts</a></li>
-            <li><a href="">Admin</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="contact.php">Contacts</a></li>
+            <li><a href="admin.php">Admin</a></li>
         </ul>
     </div>
 
@@ -74,6 +76,8 @@
 
     <div class="footer">
         <p>Copyright &copy; 2023 <span>Kolej Vokasional Sepang</span></p>
+    </div>
+
     </div>
     <script src="script.js"></script>
 </body>

@@ -13,6 +13,11 @@ body{
     min-height: 100vh
 
 }
+
+.container{
+    max-width: 1440px;
+    margin: auto;
+}
 /* navigation */
 
 .navbar{
@@ -26,6 +31,7 @@ body{
     z-index: 2;
     width: 100%;
     border-bottom: solid 0.5px black;
+    max-width: 1440px;
 }
 
 .logo a img{
@@ -87,31 +93,6 @@ body{
 }
 
 
-.text h3{
-    font-weight: 400;
-    color: white;
-    font-family: 'Bebas Neue', sans-serif;
-    background: linear-gradient(109.2deg, rgb(107, 52, 255) 16.5%, rgb(51, 159, 247) 81%);
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    font-size: 40px;
-}
-
-/* text */
-
-.text{
-    padding: 70px;
-    margin: 0;
-    text-align: center;
-    height: 100%;
-    position: relative;
-    top: 85px;
-    align-items: center;
-    
-}
-
-
 .text h1{
     font-weight: 400;
     color: white;
@@ -120,18 +101,19 @@ body{
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-    font-size: 5vw;
+    font-size: 76px;
 }
 
 
 /* button */
 
 .button{
-    margin: 0;
-    position: absolute;
-    top: 60%;
-    left: 40%;
-
+    margin: auto 0;
+    position: relative;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
 }
 
 .button button{
@@ -143,8 +125,8 @@ body{
   color: #fff;
   background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
   cursor: pointer;
-  width: 45vh;
-  height:3.5vw;
+  width: 250px;
+  height:30px;
 }
 
 .button button:hover{
@@ -155,20 +137,11 @@ body{
     text-decoration: none;
 }
 
-.button h4{
-    font-weight: lighter;
-    text-align: center;
-    font-size: medium;
-    margin-top: 10px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgb(60, 60, 255);
-}
 
 
 /* footer */
 
 .footer{
-    left: 0;
     bottom: 0;
     height: 50px;
     width: 100%;
@@ -179,6 +152,7 @@ body{
     font-size: 0.8rem;
     position: absolute;
     z-index: 3;
+    max-width: 1440px;
 }
 
 

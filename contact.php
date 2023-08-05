@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="contact.css?v=<?php echo time(); ?>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -12,7 +12,6 @@
 <body>
 
     <div class="container">
-
     <!--navbar-->
 
     <div class="navbar">
@@ -31,25 +30,21 @@
    <!--text-->
 
     <div class="text">
-        <h1>Sistem Aduan Asrama KVS</h1>
+        <h3>Contacts</h3>
     </div>
 
-    <!--Button-->
-
-    <div class="button" role="button">
-        <a href="form.php"><button>Lapor</button></a>
-    </div>
-
+    <!--form-->
+  <div class="contacts">
+    <div class="penyelia"></div>
+    <div class="ketua"></div>
+  </div>
     <!--footer-->
 
     <div class="footer">
         <p>Copyright &copy; 2023 <span>Kolej Vokasional Sepang</span></p>
     </div>
-
-    </div>
-
-
     <script src="script.js"></script>
 
+    </div>
 </body>
 </html> 
