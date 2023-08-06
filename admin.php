@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="admin.css?v=<?php echo time(); ?>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -38,9 +38,9 @@
     <div class="form">
         <div class="login">
             <label for="uname"><b>Username</b></label><br>
-            <input type="text" placeholder="Enter Username" name="uname" required><br>
+            <input type="text" placeholder="Enter Username" name="uname" required><br><br>
         
-            <label for="psw"><b>Password</b></label><br>
+            <label for="psw" class="psw"><b>Password</b></label><br>
             <input type="password" placeholder="Enter Password" name="psw" required><br><br>
         
             <button type="submit">Login</button>
