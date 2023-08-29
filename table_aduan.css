@@ -1,0 +1,140 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh
+
+}
+
+.container{
+    max-width: 1440px;
+    margin: auto;
+}
+/* navigation */
+
+.navbar{
+    background-color: rgba(242, 237, 237, 0.889);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2px;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    border-bottom: solid 0.5px black;
+    max-width: 1440px;
+}
+
+.logo a img{
+    padding-left: 50px;
+    margin-top: 15px;
+    height: 40px;
+    text-decoration: none; position: relative;
+}
+
+.logo span{
+    font-size: 1.8rem;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    vertical-align: super;
+}
+
+.navlogo{
+    font-weight: 100;
+    height: 60px;
+    padding:0 ;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    text-transform: capitalize;
+    padding-right: 70%;
+    margin-top: 25px;
+    height: 40px;  
+    position: relative;
+}
+
+.menu li{
+    margin-left: 20px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;   
+}
+
+.menu li a:hover{
+    color: lightseagreen
+}
+
+/* text */
+
+.text{
+    padding: 70px;
+    margin: 0;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    top: 70px;
+    align-items: center;
+    
+}
+
+
+.text h3{
+    font-weight: 400;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    background: linear-gradient(109.2deg, rgb(107, 52, 255) 16.5%, rgb(51, 159, 247) 81%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 40px;
+}
+
+/* table */
+table{
+    padding: auto;
+    margin: auto;
+}
+
+table tr th{
+    width: 10%;
+    border: solid 1px white;
+    color: white;
+    background-color: grey;
+}
+
+tr:nth-child(even) {
+    background-color: #D6EEEE;
+  }
+
+
+/* footer */
+
+.footer{
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(0, 68, 64);
+    color: white;
+    text-align: center;
+    line-height: 4;
+    font-size: 0.8rem;
+    position: absolute;
+    z-index: 3;
+    max-width: 1440px;
+}
+
