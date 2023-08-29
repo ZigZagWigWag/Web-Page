@@ -17,7 +17,7 @@
         }
         else {
             
-            echo "Something is wrong".$insertQuery."".mysqli_error($conn);
+            echo "<script>alert('Something is Wrong');"."window.location='form.php'</script>";
         }
         
         mysqli_error($conn);

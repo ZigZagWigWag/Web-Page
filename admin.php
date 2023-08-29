@@ -36,7 +36,7 @@
 
     <!--form-->
     <div class="form">
-        <form action="/login.php" method="POST">
+        <form action="login.php" method="POST">
             <div class="login">
                 <label for="uname"><b>Username</b></label><br>
                 <input type="text" placeholder="Enter Username" name="uname" required><br><br>

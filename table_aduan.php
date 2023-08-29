@@ -55,15 +55,16 @@
         </tr>
 
         <?php 
-                $result=mysqli_query($conn, "SELECT * FROM ");
+                include_once('config.php');
+                $result=mysqli_query($conn, "SELECT * FROM aduan");
                 while($row=mysqli_fetch_array($result)){
                     echo "<tr>";
-                    echo "<td>".$row['Nama']."</td>";
-                    echo "<td>".$row['Blok']."</td>";
-                    echo "<td>".$row['Dorm']."</td>";
-                    echo "<td>".$row['Aduan']."</td>";
-                    echo "<td>".$row['Tarikh']."</td>";
-                    echo"<td><a href= \"delete.php?Nama=$row[Nama]\" onClick=\return confrim(Adakah anda pasti?)\">Delete</a></td>";
+                    echo "<td>".$row['nama']."</td>";
+                    echo "<td>".$row['blok']."</td>";
+                    echo "<td>".$row['dorm']."</td>";
+                    echo "<td>".$row['aduan']."</td>";
+                    echo "<td>".$row['tarikh']."</td>";
+                    echo"<td><a href= \"delete.php?Nama=$row[nama]\" onClick=\return confrim(Adakah anda pasti?)\">Delete</a></td>";
                 }
         ?>
     </table>

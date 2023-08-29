@@ -20,23 +20,23 @@ if (isset($_POST['uname']) && isset($_POST['psw'])) {
 
 	$uname = validate($_POST['uname']);
 
-	$psw = validate($_POST['psw']);
+	$pass = validate($_POST['psw']);
 
 	if (empty($uname)) {
 
-		header("Location: index.php?error=Username is required");
+		echo "<script>alert('Username is required');"."window.location='admin.php'</script>";
 
 		exit();
 
-	}else if (empty($psw)) {
+	}else if (empty($pass)) {
 
-		header("Location: index.php?error=Password is required");
+		echo "<script>alert('Password is required');"."window.location='admin.php'</script>";
 
 		exit();
 
 	}else{
 
-		$sql = "SELECT * FROM admin WHERE username='$uname' AND password='$psw'";
+		$sql = "SELECT * FROM admin WHERE username='$uname' AND password='$pass'";
 
 		$result = mysqli_query($conn, $sql);
 
@@ -44,30 +44,29 @@ if (isset($_POST['uname']) && isset($_POST['psw'])) {
 
 			$row = mysqli_fetch_assoc($result);
 
-			if ($row['uname'] === $uname && $row['psw'] === $psw) {
+			if ($row['username'] === $uname && $row['password'] === $pass) {
 
-				echo "Logged in!";
+				echo "<script>alert('Logged In!');"."window.location='table_aduan.php'</script>";
 
-				$_SESSION['username'] = $row['uname'];
+				$_SESSION['username'] = $row['username'];
 
 				
 
-				$_SESSION['password'] = $row['psw'];
+				$_SESSION['password'] = $row['password'];
 
-				header("Location: index.php");
 
 				exit();	
 
 			}else{
 
-				header("Location: index.php?error=Incorrect Username or password");
+				echo "<script>alert('Incorrect Username Or Password');"."window.location='admin.php'</script>";
 
 				exit();
 			}
 
 		}else{
 
-			header("Location: index.php?error=Incorrect Username or password");
+			echo "<script>alert('Incorrect Username Or Password');"."window.location='admin.php'</script>";
 
 			exit();
 
@@ -77,7 +76,7 @@ if (isset($_POST['uname']) && isset($_POST['psw'])) {
 
 }else{
 
-	header("Location: index.php");
+	header("Location: admin.php");
 
 	exit();
 	

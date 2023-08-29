@@ -122,6 +122,18 @@ tr:nth-child(even) {
   }
 
 
+.delete{
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.delete a{
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /* footer */
 
 .footer{
