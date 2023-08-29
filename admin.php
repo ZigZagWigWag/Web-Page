@@ -36,16 +36,18 @@
 
     <!--form-->
     <div class="form">
-        <div class="login">
-            <label for="uname"><b>Username</b></label><br>
-            <input type="text" placeholder="Enter Username" name="uname" required><br><br>
-        
-            <label for="psw" class="psw"><b>Password</b></label><br>
-            <input type="password" placeholder="Enter Password" name="psw" required><br><br>
-        
-            <button type="submit">Login</button>
+        <form action="/login.php" method="POST">
+            <div class="login">
+                <label for="uname"><b>Username</b></label><br>
+                <input type="text" placeholder="Enter Username" name="uname" required><br><br>
+            
+                <label for="psw" class="psw"><b>Password</b></label><br>
+                <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+            
+                <input type="submit" value="Login" class="button">
+            </div>
         </div>
-    </div>
+    </form>
 
     <!--footer-->
 

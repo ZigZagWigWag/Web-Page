@@ -35,8 +35,17 @@
     </div>
 
     <!--form-->
+
+    <?php
+    include('config.php');
+    $dropdownQuery = "select nama from blok";
+      $resultDrop = mysqli_query($conn, $dropdownQuery);
+    
+    ?>
+
+
     <div class="form">
-        <form action="/action_page.php">
+        <form action="insertform.php" name="form" method="POST">
             <div class="nama">
                 <label for="nama">Nama:</label>
                 <input type="text" id="nama" name="nama"><br>
@@ -45,12 +54,19 @@
             <div class="blok-dorm">
                 <label for="blok">Blok:</label>
                 <select name="blok" id="blok">
-                    <option value="BA">BA</option>
-                    <option value="BB">BB</option>
-                    <option value="BC">BC</option>
-                    <option value="GA">GA</option>
-                    <option value="GB">GB</option>
+
+                    <?php
+        
+                        while($row=mysqli_fetch_array($resultDrop))
+                     {
+            
+                         echo "<option value= '".$row['nama']."'>".$row['nama']."</option>";
+                     }
+        
+                     ?>
+
                 </select>
+           
             
                 <label for="dorm">Dorm:</label>
                 <input type="text" id="dorm" name="dorm"><br>
@@ -62,12 +78,12 @@
             </div>
 
             <div class="gambar">
-                <label for="gambar">Gambar:</label>
-                <input type="file" id="gambar" name="gambar"><br><br>
+                <label for="gambar">Tarikh:</label>
+                <input type="date" id="tarikh" name="tarikh"><br><br>
             </div> 
 
         <center>
-        <input type="submit" value="Submit" class="submit">
+        <input type="submit" value="Submit" class="submit" name="submit">
         </center>
       </form> 
     </div>
@@ -80,5 +96,8 @@
 
     </div>
     <script src="script.js"></script>
+
+
+
 </body>
 </html> 
