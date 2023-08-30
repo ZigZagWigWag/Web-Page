@@ -138,12 +138,13 @@ body{
   border-radius: 6px;
   border: none;
   color: #fff;
-  background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+  background: #367AF6;
   cursor: pointer;
 }
 
 .submit:hover{
-    opacity: 0.9;
+    background: rgb(87, 135, 255);
+    transition: 0.4s;
 }
 
 /* footer */

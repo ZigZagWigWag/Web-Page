@@ -129,8 +129,10 @@ table{
     padding: auto;
     margin: auto;
     position: absolute;
-    margin-left: 230px;
+    margin-left: 190px;
+    max-width: 950px;
 }
+
 
 table tr th{
     width: 10%;
@@ -141,21 +143,30 @@ table tr th{
 }
 
 tr:nth-child(even) {
-    background-color: #D6EEEE;
+    background-color: #f0f0f0;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #d0d0d0;
   }
 
 
 .delete{
     text-align: center;
-    cursor: pointer;
-    
 }
 
 .delete a{
-    color: red;
     text-decoration: none;
-    cursor: pointer;
+    color: red;
+    font-weight: 500;
 }
+
+.delete a:hover{
+    color: rgb(255, 77, 0);
+    transition: 0.4s;
+}
+
+
 
 /* footer */
 
