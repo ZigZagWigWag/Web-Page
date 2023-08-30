@@ -1,83 +1,61 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css?v=<?php echo time(); ?>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Log Masuk</title>
+</head>
+<body>
 
-session_start();
+    <div class="container">
 
-include "config.php";
+    <!--navbar-->
 
-if (isset($_POST['uname']) && isset($_POST['psw'])) {
+    <div class="navbar">
+        <div class="navlogo">
+            <div class="logo">
+                <a href="index.php"><img src="img/logokv.png" alt=""></a>
+            </div>
+        </div>
+        <ul class="menu">
+            <li><a href="index.php">Home</a></li>
+            <li><a href="contact.php">Contacts</a></li>
+            <li><a href="admin.php">Admin</a></li>
+        </ul>
+    </div>
 
-	function validate($data){
+   <!--text-->
 
-		$data = trim($data);
+    <div class="text">
+        <h3>Login</h3>
+    </div>
 
-		$data = stripcslashes($data);
+    <!--form-->
+    <div class="form">
+        <form action="loginpro.php" method="POST">
+            <div class="login">
+                <label for="uname"><b>Username</b></label><br>
+                <input type="text" placeholder="Enter Username" name="uname" required><br><br>
+            
+                <label for="psw" class="psw"><b>Password</b></label><br>
+                <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+            
+                <span class="button"><input type="submit" value="Login"></span>
+            </div>
+        </div>
+    </form>
 
-		$data = htmlspecialchars($data);
+    <!--footer-->
 
-		return $data;
+    <div class="footer">
+        <p>Copyright &copy; 2023 <span>Kolej Vokasional Sepang</span></p>
+    </div>
 
-	}
-
-	$uname = validate($_POST['uname']);
-
-	$pass = validate($_POST['psw']);
-
-	if (empty($uname)) {
-
-		echo "<script>alert('Username is required');"."window.location='admin.php'</script>";
-
-		exit();
-
-	}else if (empty($pass)) {
-
-		echo "<script>alert('Password is required');"."window.location='admin.php'</script>";
-
-		exit();
-
-	}else{
-
-		$sql = "SELECT * FROM admin WHERE username='$uname' AND password='$pass'";
-
-		$result = mysqli_query($conn, $sql);
-
-		if (mysqli_num_rows($result) === 1) {
-
-			$row = mysqli_fetch_assoc($result);
-
-			if ($row['username'] === $uname && $row['password'] === $pass) {
-
-				echo "<script>alert('Logged In!');"."window.location='table_aduan.php'</script>";
-
-				$_SESSION['username'] = $row['username'];
-
-				
-
-				$_SESSION['id'] = $row['id'];
-
-
-				exit();	
-
-			}else{
-
-				echo "<script>alert('Incorrect Username Or Password');"."window.location='admin.php'</script>";
-
-				exit();
-			}
-
-		}else{
-
-			echo "<script>alert('Incorrect Username Or Password');"."window.location='admin.php'</script>";
-
-			exit();
-
-		}
-
-	}
-
-}else{
-
-	header("Location: admin.php");
-
-	exit();
-	
-}
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

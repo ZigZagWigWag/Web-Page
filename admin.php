@@ -1,3 +1,20 @@
+<?php 
+
+session_start();
+
+if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
+
+ ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senarai Aduan</title>
+</head>
+<body>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <title>Log Masuk</title>
+    <title>Aduan Asrma KVS</title>
 </head>
 <body>
 
@@ -26,29 +43,41 @@
             <li><a href="contact.php">Contacts</a></li>
             <li><a href="admin.php">Admin</a></li>
         </ul>
+        <span><li><a href="logout.php" >Log Out</a></li></span>
     </div>
 
    <!--text-->
 
     <div class="text">
-        <h3>Login</h3>
+        <h3>Senarai Aduan</h3>
     </div>
 
-    <!--form-->
-    <div class="form">
-        <form action="login.php" method="POST">
-            <div class="login">
-                <label for="uname"><b>Username</b></label><br>
-                <input type="text" placeholder="Enter Username" name="uname" required><br><br>
-            
-                <label for="psw" class="psw"><b>Password</b></label><br>
-                <input type="password" placeholder="Enter Password" name="psw" required><br><br>
-            
-                <span class="button"><input type="submit" value="Login"></span>
-            </div>
-        </div>
-    </form>
+    <!-- table -->
+    <table cellpadding="5" cellspacing="0">
+        <tr>
+            <th>NAMA</th>
+            <th>BLOK</th>
+            <th>DORM</th>
+            <th>ADUAN</th>
+            <th>TARIKH</th>
+            <th>TINDAKAN</th>
+        </tr>
 
+        <?php 
+                include_once('config.php');
+                $result=mysqli_query($conn, "SELECT * FROM aduan");
+                while($row=mysqli_fetch_array($result)){
+                    echo "<tr>";
+                    echo "<td>".$row['nama']."</td>";
+                    echo "<td>".$row['blok']."</td>";
+                    echo "<td>".$row['dorm']."</td>";
+                    echo "<td>".$row['aduan']."</td>";
+                    echo "<td>".$row['tarikh']."</td>";
+                    echo"<td class='delete'><a href= \"delete.php?id=$row[id]\" onClick=\return confrim(Adakah anda pasti?)\">Delete</a></td>";
+                    echo "</tr>";
+                }
+        ?>
+    </table>
     <!--footer-->
 
     <div class="footer">
@@ -56,6 +85,19 @@
     </div>
 
     </div>
-    <script src="script.js"></script>
 </body>
 </html> 
+    
+</body>
+</html>
+<?php 
+
+}else{
+
+     header("Location: login.php");
+
+     exit();
+
+}
+
+ ?>
