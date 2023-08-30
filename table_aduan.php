@@ -64,7 +64,8 @@
                     echo "<td>".$row['dorm']."</td>";
                     echo "<td>".$row['aduan']."</td>";
                     echo "<td>".$row['tarikh']."</td>";
-                    echo"<td><a href= \"delete.php?Nama=$row[nama]\" onClick=\return confrim(Adakah anda pasti?)\">Delete</a></td>";
+                    echo"<td><a href= \"delete.php?id=$row[id]\" onClick=\return confrim(Adakah anda pasti?)\">Delete</a></td>";
+                    echo "</tr>";
                 }
         ?>
     </table>

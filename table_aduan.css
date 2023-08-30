@@ -108,13 +108,16 @@ body{
 table{
     padding: auto;
     margin: auto;
+    position: absolute;
+    margin-left: 230px;
 }
 
 table tr th{
     width: 10%;
     border: solid 1px white;
     color: white;
-    background-color: grey;
+    background-color: grey; 
+    
 }
 
 tr:nth-child(even) {
