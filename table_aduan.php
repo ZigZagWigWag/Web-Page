@@ -1,3 +1,11 @@
+<?php 
+
+session_start();
+
+if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
+
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,7 +73,7 @@
                     echo "<td>".$row['dorm']."</td>";
                     echo "<td>".$row['aduan']."</td>";
                     echo "<td>".$row['tarikh']."</td>";
-                    echo"<td><a href= \"delete.php?id=$row[id]\" onClick=\return confrim(Adakah anda pasti?)\">Delete</a></td>";
+                    echo"<td class='delete'><a href= \"delete.php?id=$row[id]\" onClick=\return confrim(Adakah anda pasti?)\">Delete</a></td>";
                     echo "</tr>";
                 }
         ?>
@@ -82,3 +90,14 @@
     
 </body>
 </html>
+<?php 
+
+}else{
+
+     header("Location: admin.php");
+
+     exit();
+
+}
+
+ ?>

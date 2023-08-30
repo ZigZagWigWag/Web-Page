@@ -52,7 +52,7 @@ if (isset($_POST['uname']) && isset($_POST['psw'])) {
 
 				
 
-				$_SESSION['password'] = $row['password'];
+				$_SESSION['id'] = $row['id'];
 
 
 				exit();	

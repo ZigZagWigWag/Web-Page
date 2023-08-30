@@ -132,14 +132,19 @@ body{
 }
 
 
-.button{
+.button input{
     padding: 6px 50px;
     font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
     border-radius: 6px;
     border: none;
     color: #fff;
-    background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+    background: #367AF6;
     cursor: pointer
+}
+
+.button input:hover{
+    background: rgb(87, 135, 255);
+    transition: 0.4s;
 }
 
 .login button:hover{
