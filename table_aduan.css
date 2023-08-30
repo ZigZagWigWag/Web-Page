@@ -59,7 +59,7 @@ body{
     display: flex;
     list-style: none;
     text-transform: capitalize;
-    padding-right: 70%;
+    padding-right: 65%;
     margin-top: 25px;
     height: 40px;  
     position: relative;
@@ -75,9 +75,29 @@ body{
     font-weight: lighter;   
 }
 
+
 .menu li a:hover{
     color: lightseagreen
 }
+
+span li {
+    list-style: none;
+    padding-right: 20px;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;   
+}
+
+
+li a:hover{
+    color: lightseagreen
+}
+
+
+
 
 /* text */
 
