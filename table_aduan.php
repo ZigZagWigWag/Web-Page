@@ -35,7 +35,7 @@
             <li><a href="contact.php">Contacts</a></li>
             <li><a href="admin.php">Admin</a></li>
         </ul>
-        <span><li><a href="logout.php" >Log Out</a></li></span>
+        <span><li><a href="logout.php" >Log pp</a></li></span>
     </div>
 
    <!--text-->
