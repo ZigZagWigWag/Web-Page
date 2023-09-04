@@ -59,7 +59,7 @@ body{
     display: flex;
     list-style: none;
     text-transform: capitalize;
-    padding-right: 70%;
+    padding-right: 65%;
     margin-top: 25px;
     height: 40px;  
     position: relative;
@@ -75,9 +75,28 @@ body{
     font-weight: lighter;   
 }
 
+
 .menu li a:hover{
     color: lightseagreen
 }
+
+span li {
+    list-style: none;
+    padding-right: 20px;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;   
+}
+
+
+li a:hover{
+    color: lightseagreen
+}
+
+
 
 /* text */
 
@@ -93,7 +112,7 @@ body{
 }
 
 
-.text h1{
+.text h3{
     font-weight: 400;
     color: white;
     font-family: 'Bebas Neue', sans-serif;
@@ -101,49 +120,55 @@ body{
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-    font-size: 76px;
+    font-size: 40px;
 }
 
 
-/* button */
+/* form */
 
-.button{
-    margin: auto 0;
+.form{
     position: relative;
-    top: 100px;
+    z-index: 1;
+    margin: auto 0;
+    width: 550px;
     left: 50%;
     transform: translateX(-50%);
-    width: 250px;
-    text-align: center;
+    padding: 50px;
+    border-radius: 20px;
+    background-image: url(img/pattern.jpg);
 }
 
-.button button{
-  align-items: center;
-  padding: 6px 50px;
+.catatan{
+    padding: 10px;
+}
+
+#catatan{
+    width: 350px;
+}
+
+.id{
+    display: none;
+}
+
+
+
+.submit{
+    padding: 6px 50px;
   font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
   border-radius: 6px;
   border: none;
   color: #fff;
   background: #367AF6;
   cursor: pointer;
-  width: 250px;
-  height:30px;
+  margin: auto;
+  display: block;
+  margin-top: 10px;
 }
 
-.button button:hover{
+.submit:hover{
     background: rgb(87, 135, 255);
     transition: 0.4s;
 }
-
-.button a{
-    text-decoration: none;
-}
-
-.link {
-    color: #004cff;
-}
-
-
 
 /* footer */
 
@@ -160,5 +185,4 @@ body{
     z-index: 3;
     max-width: 1440px;
 }
-
 

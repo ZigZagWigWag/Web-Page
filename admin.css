@@ -139,8 +139,8 @@ table tr th{
     border: solid 1px white;
     color: white;
     background-color: grey; 
-    
 }
+
 
 tr:nth-child(even) {
     background-color: #f0f0f0;
@@ -150,20 +150,30 @@ tr:nth-child(even) {
     background-color: #d0d0d0;
   }
 
+  .blok,.dorm{
+    text-align: center;
+  }
 
-.delete{
+
+.delete,.kemaskini{
     text-align: center;
 }
 
-.delete a{
+.delete a,.kemaskini a{
     text-decoration: none;
-    color: red;
     font-weight: 500;
 }
 
-.delete a:hover{
-    color: rgb(255, 77, 0);
-    transition: 0.4s;
+.kemaskini a{
+    color: green;
+}
+
+.delete a{
+    color: red;
+}
+
+.id{
+    display: none;
 }
 
 

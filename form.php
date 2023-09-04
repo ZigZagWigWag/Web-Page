@@ -82,9 +82,12 @@
                 <input type="date" id="tarikh" name="tarikh"><br><br>
             </div> 
 
-        <center>
+            <div class="catatan">
+                <input type="text" id="catatan" name="catatan" value="No Action">
+            </div>
+        
         <input type="submit" value="Submit" class="submit" name="submit">
-        </center>
+        
       </form> 
     </div>
 

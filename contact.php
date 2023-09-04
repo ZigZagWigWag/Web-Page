@@ -38,9 +38,9 @@
     <div class="ketua">
         <img src="img/ketua.jpeg" alt="">
         <h1>Ketua Warden</h1>
-        <button onclick="myFunction1()" id="Btn1">Read more</button>
+        <button onclick="myFunction1()" id="Btn1">Read more</button><br>
         <span id="more1">
-            Jayamin <br>
+            En. Mohd Jayamin<br>
             0 13-789 8277
         </span>
     </div>
@@ -50,7 +50,7 @@
         <h1>Penyelia Asrama</h1>
         <button onclick="myFunction2()" id="Btn2">Read more</button>
         <span id="more2">
-            John Doe <br>
+            En. Muhammmad Azmin<br>
             0 12-345 6789
         </span>
     </div>  

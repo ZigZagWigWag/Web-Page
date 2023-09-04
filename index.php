@@ -38,6 +38,7 @@
 
     <div class="button" role="button">
         <a href="form.php"><button>Lapor</button></a>
+        <a href="rekod.php" class="link">Rekod Aduan</a>
     </div>
 
     <!--footer-->

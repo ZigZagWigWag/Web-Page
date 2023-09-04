@@ -132,6 +132,10 @@ body{
 
 }
 
+.catatan{
+    display: none;
+}
+
 .submit{
     padding: 6px 50px;
   font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
@@ -140,6 +144,8 @@ body{
   color: #fff;
   background: #367AF6;
   cursor: pointer;
+  margin: auto;
+  display: block;
 }
 
 .submit:hover{
