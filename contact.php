@@ -37,7 +37,7 @@
   <div class="contacts">
     <div class="ketua">
         <img src="img/ketua.jpeg" alt="">
-        <h1>Ketua Asrama</h1>
+        <h1>Ketua Warden</h1>
         <button onclick="myFunction1()" id="Btn1">Read more</button>
         <span id="more1">
             Jayamin <br>
