@@ -6,11 +6,12 @@
         
         $nama = $_POST['nama'];
         $blok = $_POST['blok'];
+        $dorm = $_POST['dorm'];
         $aduan = $_POST['aduan'];
         $tarikh = $_POST['tarikh'];
         $catatan = $_POST["catatan"];
         
-        $insertQuery = "INSERT INTO aduan (nama, blok, aduan, tarikh,catatan) VALUES ('$nama','$blok','$aduan','$tarikh','$catatan')";
+        $insertQuery = "INSERT INTO aduan (nama, blok,dorm, aduan, tarikh,catatan) VALUES ('$nama','$blok','$dorm','$aduan','$tarikh','$catatan')";
         
         if (mysqli_query($conn, $insertQuery)) {
             

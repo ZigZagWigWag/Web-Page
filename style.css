@@ -135,14 +135,15 @@ body{
     transition: 0.4s;
 }
 
-.button a{
-    text-decoration: none;
-}
+
 
 .link {
-    color: #004cff;
+    color: white ;
 }
 
+.link p:hover{
+    color:  lightblue;
+}
 
 
 /* footer */

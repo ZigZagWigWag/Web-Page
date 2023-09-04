@@ -111,8 +111,8 @@ body{
 table{
     padding: auto;
     margin: auto;
-    position: absolute;
-    margin-left: 190px;
+    display: table ;
+    margin: auto;
     max-width: 950px;
 }
 

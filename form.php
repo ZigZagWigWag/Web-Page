@@ -69,7 +69,7 @@
            
             
                 <label for="dorm">Dorm:</label>
-                <input type="text" id="dorm" name="dorm"><br>
+                <input type="number" id="dorm" name="dorm"><br>
             </div>
 
             <div class="aduan">
@@ -77,8 +77,8 @@
                 <input type="text" id="aduan" name="aduan"><br>
             </div>
 
-            <div class="gambar">
-                <label for="gambar">Tarikh:</label>
+            <div class="tarikh">
+                <label for="tarikh">Tarikh:</label>
                 <input type="date" id="tarikh" name="tarikh"><br><br>
             </div> 
 
