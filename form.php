@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Connect dengan css -->
     <link rel="stylesheet" href="form.css?v=<?php echo time(); ?>">
+    <!-- Menggunakan font Bebas Neue daripada google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -36,6 +38,7 @@
 
     <!--form-->
 
+    <!-- Untuk memaparkan option drop down -->
     <?php
     include('config.php');
     $dropdownQuery = "select nama from blok";
@@ -82,6 +85,7 @@
                 <input type="date" id="tarikh" name="tarikh"><br><br>
             </div> 
 
+            <!-- Memasukkan nilai dalam catatan sebagai 'No action' -->
             <div class="catatan">
                 <input type="text" id="catatan" name="catatan" value="No Action">
             </div>
@@ -96,11 +100,5 @@
     <div class="footer">
         <p>Copyright &copy; 2023 <span>Kolej Vokasional Sepang</span></p>
     </div>
-
-    </div>
-    <script src="script.js"></script>
-
-
-
 </body>
 </html> 

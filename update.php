@@ -1,3 +1,4 @@
+<!-- Memulakan session -->
 <?php 
 
 session_start();
@@ -12,7 +13,9 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Connect dengan css -->
     <link rel="stylesheet" href="update.css?v=<?php echo time(); ?>">
+    <!-- Menggunakan font Bebas Neue daripada google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -47,13 +50,14 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
     <!--form-->
 
     <?php
+    // Sambung dengan database
 	include_once ('config.php');
-
+    // Mendapatkan id aduan
 	$id= $_GET['id'];
 	$sql = "SELECT * FROM aduan WHERE id= '$id' ";
 
 	$result =mysqli_query($conn, $sql);
-
+    // Mendapatkan data dari database
 	while($row = mysqli_fetch_array($result)) {
 		$id = $row['id'];
 		$catatan = $row['catatan'];
@@ -62,6 +66,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
 
 
     <div class="form">
+        <!-- Sambung dengan updatepro.php -->
         <form action="updatepro.php" name="update" method="POST">
             <div class="id">
                 <label for="id">id</label>
@@ -87,9 +92,6 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
     </div>
 
     </div>
-    <script src="script.js"></script>
-
-
 
 </body>
 </html> 

@@ -1,19 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Senarai Aduan</title>
-</head>
-<body>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Connect dengan css -->
     <link rel="stylesheet" href="rekod.css?v=<?php echo time(); ?>">
+    <!-- Menggunakan font Bebas Neue daripada google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -56,7 +48,9 @@
         </tr>
 
         <?php 
+                // Sambung ke databse
                 include_once('config.php');
+                // Memaparkan maklumat dalam table 'aduan'
                 $result=mysqli_query($conn, "SELECT * FROM aduan");
                 while($row=mysqli_fetch_array($result)){
                     echo "<tr>";
@@ -80,5 +74,4 @@
 </body>
 </html> 
     
-</body>
-</html>
+

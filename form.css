@@ -132,6 +132,7 @@ body{
 
 }
 
+/* Menyembunyikan medan input catatan */
 .catatan{
     display: none;
 }

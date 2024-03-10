@@ -155,7 +155,7 @@ button:hover{
     background: rgb(87, 135, 255);
     transition: 0.4s;
 }
-
+/* Menyembunyikan maklumat */
 #more1,#more2{
     display: none;
     margin-top: 10px;
